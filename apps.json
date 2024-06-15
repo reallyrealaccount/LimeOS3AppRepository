@@ -1,6 +1,7 @@
 [
   {
     "name": "clicker",
+    "author": "PaleNoobs",
     "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/clicker.lua",
     "compiled": false
   }
