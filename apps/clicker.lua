@@ -1,16 +1,12 @@
--- note for readers: any weird line cut offs are due to the SE
--- text wrapping being broken, so i cut off the line to be able to read it
-
 local fs = loadlib("FileSystem")
 local http = loadlib("Http")
--- encryption lib
 
 local app = Lime.CreateWindow("Cookie Clicker 1.0")
 
 local data = {
  ["cookieAmount"] = 0,
  ["incrementAmount"] = 1,
- ["upgrades"] = { -- amount of each upgrade (i.e. 5 cursors, 10 grandmas)
+ ["upgrades"] = {
   ["cursor"] = 0,
   ["grandma"] = 0,
   ["bakery"] = 0,
@@ -33,7 +29,7 @@ else
  print("Save file not found, creating new file")
 end
 
--- **UI**
+-- UI
 local scrollFrame = Lime.CreateUI(app, "ScrollingFrame")
 scrollFrame.Size = UDim2.fromScale(1,1)
 scrollFrame.BackgroundTransparency = 1
@@ -202,7 +198,7 @@ bakeryUpgrade.Parent = upgrades
 bakeryUpgrade.Text = bakeryUpgradeText
 bakeryUpgrade.TextColor3 = Color3.fromRGB(255,255,255)
 
--- **Mechanics**
+-- Mechanics
 button.Activated:Connect(function()
  data["cookieAmount"] = data["cookieAmount"] + data["incrementAmount"]
  cookies.Text = "Cookies: "..data["cookieAmount"]
