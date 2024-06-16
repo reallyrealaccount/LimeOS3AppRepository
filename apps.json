@@ -4,5 +4,11 @@
     "author": "PaleNoobs",
     "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/clicker.lua",
     "compiled": false
+  },
+  {
+    "name": "C TEST!!!!",
+    "author": "PaleNoobs",
+    "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/output.lef",
+    "compiled": true
   }
 ]
