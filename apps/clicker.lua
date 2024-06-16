@@ -3,6 +3,7 @@ local http = loadlib("Http")
 
 local app = Lime.CreateWindow("Cookie Clicker 1.0")
 
+
 local data = {
  ["cookieAmount"] = 0,
  ["incrementAmount"] = 1,
