@@ -168,20 +168,17 @@ end
 
 local cursorUpgradeText = "Cursor (50 Cookies)"
 if data["upgrades"]["cursor"] > 0 then
-    cursorUpgradeText = "Cursor " .. (data["upgrades"]["cursor"] + 1) ..
-" (" .. (data["upgrades"]["cursor"] * 50 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Cursor " .. (data["upgrades"]["cursor"] + 1) .. " (" .. (data["upgrades"]["cursor"] * 50 * 1.5) .. " Cookies)"
 end
 
 local grandmaUpgradeText = "Grandma (250 Cookies)"
 if data["upgrades"]["grandma"] > 0 then
-    cursorUpgradeText = "Grandma " .. (data["upgrades"]["grandma"] + 1) ..
-" (" .. (data["upgrades"]["grandma"] * 250 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Grandma " .. (data["upgrades"]["grandma"] + 1) .. " (" .. (data["upgrades"]["grandma"] * 250 * 1.5) .. " Cookies)"
 end
 
 local bakeryUpgradeText = "Bakery (2000 Cookies)"
 if data["upgrades"]["bakery"] > 0 then
-    cursorUpgradeText = "Bakery " .. (data["upgrades"]["bakery"] + 1) ..
-" (" .. (data["upgrades"]["bakery"] * 2000 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Bakery " .. (data["upgrades"]["bakery"] + 1) .. " (" .. (data["upgrades"]["bakery"] * 2000 * 1.5) .. " Cookies)"
 end
 
 local cursorUpgrade = newUpgrade()
@@ -215,16 +212,11 @@ end)
 
 while task.wait(1) do
  --print(http.JSONEncode(data))   
- data["cookieAmount"] = data["cookieAmount"] +
-data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) +
-(data["upgrades"]["bakery"] * 100)
+ data["cookieAmount"] = data["cookieAmount"] + data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100)
  
- perSecondText.Text = "Cookies per second: "
-..tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + 
-(data["upgrades"]["bakery"] * 100))
+ perSecondText.Text = "Cookies per second: " .. tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100))
 
  local jsonData = http.JSONEncode(data)
- fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData,
-"System", true)
+ fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
  --print(fs.GetFile("C:/System/AppData/CookieClicker.txt").Data)
 end
