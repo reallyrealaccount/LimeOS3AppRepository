@@ -25,8 +25,7 @@ if fs.FileExists("C:/System/AppData/CookieClicker.txt") then
 else
  local jsonData = http.JSONEncode(data)
  fs.CreateFile("C:/System/AppData/CookieClicker.txt", nil, "R-W", "System")
- fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData,
-"System", true)
+ fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
  print("Save file not found, creating new file")
 end
 
@@ -58,9 +57,7 @@ perSecondText.TextScaled = true
 perSecondText.BackgroundTransparency = 0.9
 perSecondText.TextColor3 = Color3.fromRGB(255,255,255)
 perSecondText.Parent = scrollFrame
-perSecondText.Text = "Cookies per second: "
-..tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + 
-(data["upgrades"]["bakery"] * 100))
+perSecondText.Text = "Cookies per second: " ..tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100))
 
 local fakebutton = Lime.CreateUI(app, "TextLabel")
 -- fake button goes under the real clickable button
