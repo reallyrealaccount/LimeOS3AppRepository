@@ -18,7 +18,9 @@ local data = {
 if fs.FileExists("C:/System/AppData/CookieClicker.txt") then
  --fs.DeleteObject("C:/System/AppData/CookieClicker.txt","System")
  local fileData = fs.GetFile("C:/System/AppData/CookieClicker.txt").Data
- if fileData == "" then fileData = data end
+ if #fileData == 0 then
+    fileData = data
+  end
  local decodedData = http.JSONDecode(fileData)
  data = decodedData
  print("Save file has been found, loaded player data")
