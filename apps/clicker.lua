@@ -5,12 +5,12 @@ local app = Lime.CreateWindow("Cookie Clicker 1.0")
 
 
 local data = {
- ["cookieAmount"] = 0,
- ["incrementAmount"] = 1,
- ["upgrades"] = {
-  ["cursor"] = 0,
-  ["grandma"] = 0,
-  ["bakery"] = 0,
+ cookieAmount = 0,
+ incrementAmount = 1,
+ upgrades = {
+  cursor = 0,
+  grandma = 0,
+  bakery = 0,
  }
 }
 
@@ -19,8 +19,8 @@ if fs.FileExists("C:/System/AppData/CookieClicker.txt") then
  --fs.DeleteObject("C:/System/AppData/CookieClicker.txt","System")
  local fileData = fs.GetFile("C:/System/AppData/CookieClicker.txt").Data
  if #fileData == 0 then
-    fileData = data
-  end
+    fileData = data
+  end
  local decodedData = http.JSONDecode(fileData)
  data = decodedData
  print("Save file has been found, loaded player data")
@@ -219,3 +219,4 @@ while task.wait(1) do
  fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
  --print(fs.GetFile("C:/System/AppData/CookieClicker.txt").Data)
 end
+
