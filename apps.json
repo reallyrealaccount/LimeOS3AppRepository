@@ -6,9 +6,9 @@
     "compiled": false
   },
   {
-    "name": "C TEST!!!!",
-    "author": "PaleNoobs",
-    "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/output.lef",
+    "name": "PhotoLime (LimeOS 2 port)",
+    "author": "ruben070hallo",
+    "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/PhotoLime.lef",
     "compiled": true
   }
 ]
