@@ -8,7 +8,7 @@
   {
     "name": "PhotoLime (LimeOS 2 port)",
     "author": "ruben070hallo",
-    "src": "https://raw.githubusercontent.com/schoolaccountidontcareabout/reallycooltempthing/main/apps/PhotoLime.lef",
+    "src": "https://byte.kiwi/output.lef",
     "compiled": true
   }
 ]
