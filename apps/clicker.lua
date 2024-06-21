@@ -5,30 +5,30 @@ local app = Lime.CreateWindow("Cookie Clicker 1.0")
 
 
 local data = {
- cookieAmount = 0,
- incrementAmount = 1,
- upgrades = {
-  cursor = 0,
-  grandma = 0,
-  bakery = 0,
- }
+ cookieAmount = 0,
+ incrementAmount = 1,
+ upgrades = {
+  cursor = 0,
+  grandma = 0,
+  bakery = 0,
+ }
 }
 
 -- Loading data
 if fs.FileExists("C:/System/AppData/CookieClicker.txt") then
- --fs.DeleteObject("C:/System/AppData/CookieClicker.txt","System")
- local fileData = fs.GetFile("C:/System/AppData/CookieClicker.txt").Data
- if #fileData == 0 then
-    fileData = data
-  end
- local decodedData = http.JSONDecode(fileData)
- data = decodedData
- print("Save file has been found, loaded player data")
+ --fs.DeleteObject("C:/System/AppData/CookieClicker.txt","System")
+ local fileData = fs.GetFile("C:/System/AppData/CookieClicker.txt").Data
+ if #fileData == 0 then
+    fileData = data
+  end
+ local decodedData = http.JSONDecode(fileData)
+ data = decodedData
+ print("Save file has been found, loaded player data")
 else
- local jsonData = http.JSONEncode(data)
- fs.CreateFile("C:/System/AppData/CookieClicker.txt", nil, "R-W", "System")
- fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
- print("Save file not found, creating new file")
+ local jsonData = http.JSONEncode(data)
+ fs.CreateFile("C:/System/AppData/CookieClicker.txt", nil, "R-W", "System")
+ fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
+ print("Save file not found, creating new file")
 end
 
 -- UI
@@ -84,9 +84,9 @@ button.AutoButtonColor = false
 button.BackgroundColor3 = Color3.fromRGB(70,70,70)
 button.Parent = scrollFrame
 if data["incrementAmount"] == 1 then
- button.Text = "+"..data["incrementAmount"].." Cookie"
+ button.Text = "+"..data["incrementAmount"].." Cookie"
 else
- button.Text = "+"..data["incrementAmount"].." Cookies"
+ button.Text = "+"..data["incrementAmount"].." Cookies"
 end
 
 local buttonStroke = Lime.CreateUI(app, "UIStroke")
@@ -151,33 +151,33 @@ upgradesLayout.CellPadding = UDim2.fromScale(0.035,0.075)
 upgradesLayout.Parent = upgrades
 
 local function newUpgrade()
- local new = Lime.CreateUI(app, "TextButton")
- new.Size = UDim2.fromScale(0.4,0.1)
- new.BackgroundColor3 = Color3.fromRGB(50,50,50)
+ local new = Lime.CreateUI(app, "TextButton")
+ new.Size = UDim2.fromScale(0.4,0.1)
+ new.BackgroundColor3 = Color3.fromRGB(50,50,50)
 
 -- might remove stroke later
- local stroke = Lime.CreateUI(app, "UIStroke")
- stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
- stroke.Thickness = 4
- stroke.Color = Color3.fromRGB(50,50,50)
- stroke.Parent = new
+ local stroke = Lime.CreateUI(app, "UIStroke")
+ stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ stroke.Thickness = 4
+ stroke.Color = Color3.fromRGB(50,50,50)
+ stroke.Parent = new
 
- return new
+ return new
 end
 
 local cursorUpgradeText = "Cursor (50 Cookies)"
 if data["upgrades"]["cursor"] > 0 then
-    cursorUpgradeText = "Cursor " .. (data["upgrades"]["cursor"] + 1) .. " (" .. (data["upgrades"]["cursor"] * 50 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Cursor " .. (data["upgrades"]["cursor"] + 1) .. " (" .. (data["upgrades"]["cursor"] * 50 * 1.5) .. " Cookies)"
 end
 
 local grandmaUpgradeText = "Grandma (250 Cookies)"
 if data["upgrades"]["grandma"] > 0 then
-    cursorUpgradeText = "Grandma " .. (data["upgrades"]["grandma"] + 1) .. " (" .. (data["upgrades"]["grandma"] * 250 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Grandma " .. (data["upgrades"]["grandma"] + 1) .. " (" .. (data["upgrades"]["grandma"] * 250 * 1.5) .. " Cookies)"
 end
 
 local bakeryUpgradeText = "Bakery (2000 Cookies)"
 if data["upgrades"]["bakery"] > 0 then
-    cursorUpgradeText = "Bakery " .. (data["upgrades"]["bakery"] + 1) .. " (" .. (data["upgrades"]["bakery"] * 2000 * 1.5) .. " Cookies)"
+    cursorUpgradeText = "Bakery " .. (data["upgrades"]["bakery"] + 1) .. " (" .. (data["upgrades"]["bakery"] * 2000 * 1.5) .. " Cookies)"
 end
 
 local cursorUpgrade = newUpgrade()
@@ -197,26 +197,25 @@ bakeryUpgrade.TextColor3 = Color3.fromRGB(255,255,255)
 
 -- Mechanics
 button.Activated:Connect(function()
- data["cookieAmount"] = data["cookieAmount"] + data["incrementAmount"]
- cookies.Text = "Cookies: "..data["cookieAmount"]
+ data["cookieAmount"] = data["cookieAmount"] + data["incrementAmount"]
+ cookies.Text = "Cookies: "..data["cookieAmount"]
 end)
 
 button.MouseButton1Down:Connect(function()
- button.Position = UDim2.fromScale(0.5,0.475)
+ button.Position = UDim2.fromScale(0.5,0.475)
 end)
 
 button.MouseButton1Up:Connect(function()
- button.Position = UDim2.fromScale(0.5,0.45)
+ button.Position = UDim2.fromScale(0.5,0.45)
 end)
 
 while task.wait(1) do
- --print(http.JSONEncode(data))   
- data["cookieAmount"] = data["cookieAmount"] + data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100)
- 
- perSecondText.Text = "Cookies per second: " .. tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100))
+ --print(http.JSONEncode(data))   
+ data["cookieAmount"] = data["cookieAmount"] + data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100)
+ 
+ perSecondText.Text = "Cookies per second: " .. tostring(data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 100))
 
- local jsonData = http.JSONEncode(data)
- fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
- --print(fs.GetFile("C:/System/AppData/CookieClicker.txt").Data)
+ local jsonData = http.JSONEncode(data)
+ fs.WriteFile("C:/System/AppData/CookieClicker.txt", jsonData, "System", true)
+ --print(fs.GetFile("C:/System/AppData/CookieClicker.txt").Data)
 end
-
