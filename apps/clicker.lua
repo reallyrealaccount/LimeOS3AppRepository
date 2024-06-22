@@ -35,9 +35,9 @@ local data = {
 print("a")
 
 -- Loading data
-if fs.FileExists(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt") then
-    -- fs.DeleteObject(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt","System") --ONLY FOR TESTING, DO NOT UNCOMMENT
-    local fileData = fs.GetFile(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt").Data
+if fs.FileExists(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt") then
+    -- fs.DeleteObject(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt","System") --ONLY FOR TESTING, DO NOT UNCOMMENT
+    local fileData = fs.GetFile(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt").Data
     if fileData == "" then
         fileData = data
     end
@@ -47,8 +47,8 @@ if fs.FileExists(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicke
 else
     data["cookieAmount"] = 17500
     local jsonData = http.JSONEncode(data)
-    fs.CreateFile(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt", nil, "R-W", "System")
-    fs.WriteFile(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
+    fs.CreateFile(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", nil, "R-W", "System")
+    fs.WriteFile(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
     print("Save file not found, creating new file")
 end
 
@@ -591,6 +591,6 @@ while app:GetChildren()[1] ~= nil do
     updateLabels()
 
     local jsonData = http.JSONEncode(data)
-    fs.WriteFile(tostring(fs.GetDriveLetter()) .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
-    -- print(fs.GetFile("tostring(fs.GetDriveLetter()) .. :/System/AppData/CookieClicker.txt").Data)
+    fs.WriteFile(GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
+    -- print(fs.GetFile("GetOSDriveLetter() .. :/System/AppData/CookieClicker.txt").Data)
 end
