@@ -582,7 +582,7 @@ rebirthButton.MouseButton1Up:Connect(function()
     rebirthButton.Position = UDim2.fromScale(0.5, 2.175)
 end)
 
-while app ~= nil do
+while app:GetChildren()[1] ~= nil do
     task.wait(1)
     -- print(http.JSONEncode(data))
 
