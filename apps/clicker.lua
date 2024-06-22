@@ -582,7 +582,8 @@ rebirthButton.MouseButton1Up:Connect(function()
     rebirthButton.Position = UDim2.fromScale(0.5, 2.175)
 end)
 
-while task.wait(1) do
+while app ~= nil do
+    task.wait(1)
     -- print(http.JSONEncode(data))
 
     data["cookieAmount"] = data["cookieAmount"] + ((data["upgrades"]["cursor"] + (data["upgrades"]["grandma"] * 5) + (data["upgrades"]["bakery"] * 50)) * data["rebirths"])
