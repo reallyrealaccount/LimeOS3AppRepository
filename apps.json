@@ -3,6 +3,7 @@
     "name": "Cookie Clicker",
     "author": "PaleNoobs",
     "description": "No description",
+    "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/clicker.lua",
     "compiled": false
   },
@@ -10,6 +11,7 @@
     "name": "PhotoLime (LimeOS 2 port)",
     "author": "ruben070hallo",
     "description": "No description",
+     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/PhotoLime.lef",
     "compiled": true
   },
@@ -17,6 +19,7 @@
     "name": "Super AntiVirus",
     "author": "9BitByte",
     "description": "No description",
+    "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/Antivirus.lef",
     "compiled": true
   }
