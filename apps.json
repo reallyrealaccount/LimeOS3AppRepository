@@ -22,5 +22,13 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/Antivirus.lef",
     "compiled": true
+  },
+  {
+    "name": "Wallpaper Customiser",
+    "author": "9BitByte",
+    "description": "Customise your wallpaper!",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/WallpaperCustomiser.lua",
+    "compiled": false
   }
 ]
