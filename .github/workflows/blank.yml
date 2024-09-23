@@ -40,12 +40,8 @@ jobs:
           a=${{ matrix.app.src }} 
           b=${a##*/}
           echo "path=apps/$(echo $b)" >> $GITHUB_ENV
-      - run: ${{ matrix.app.hash = HashFiles(env.path) }}
-  finish:
-    runs-on: ubuntu-latest
-    needs: loop-json
-    steps:
       - run: |
-          printf '%s\n' ${{ toJSON(some.var) }} > test.json
+          echo '[\
+            test' > test.json
           cat test.json
-      
+          echo ${{ HashFiles(env.path) }}
