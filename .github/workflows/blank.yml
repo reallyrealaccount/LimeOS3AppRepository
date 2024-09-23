@@ -39,5 +39,9 @@ jobs:
           # Remove the last comma and close the array
           sed -i '$ s/,$//' combined.json
           echo "]" >> combined.json
-
-      - run: echo combined.json
+          cat combined.json
+      - name: Upload JSON as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: combined-json
+          path: combined.json
