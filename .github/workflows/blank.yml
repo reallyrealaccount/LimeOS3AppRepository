@@ -22,8 +22,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Setup the Node environment. This step can be skipped if Node has been installed.
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v1
+      - uses: actions/cache@v2
 
       - name: hash
         run: echo ${{ hashFiles('apps/clicker.lua') }}
