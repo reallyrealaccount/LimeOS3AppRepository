@@ -36,8 +36,8 @@ jobs:
         app: ${{ fromJSON(needs.read-json.outputs.json-content) }}
     steps:
       - run: |
-          a = ${{ matrix.app.src }} 
-          b = ${a##*/}
+          a=${{ matrix.app.src }} 
+          b=${a##*/}
           echo $b
   build:
     # The type of runner that the job will run on
