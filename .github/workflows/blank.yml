@@ -41,8 +41,8 @@ jobs:
             echo "$filename" > "./apps/$filename"
             
             # Use hashFiles() to generate the hash of the temporary file
-            hash=$(echo "${{ hashFiles('temp_files/*') }}" | tr -d '\n')
-
+            hash=$(echo "${{ hashFiles('temp_files/*') }}")
+            
             # Create a new JSON object with the hash
             modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
             echo "$modified_app," >> combined.json
