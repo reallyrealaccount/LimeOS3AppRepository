@@ -30,16 +30,26 @@ jobs:
 
       - name: Create JSON Objects
         run: |
-          # Start the combined JSON array
+          run: |
           echo "[" > combined.json
-          # Iterate over each app object
           echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
-            echo "$app," >> combined.json
+            # Extract the src field and get the last part of the URL
+            src=$(echo "$app" | jq -r '.src')
+            filename=$(basename "$src") # Get the last part of the URL
+            
+            # Create a temporary file with the filename
+            echo "$filename" > "./apps/$filename"
+            
+            # Use hashFiles() to generate the hash of the temporary file
+            hash=$(echo "${{ hashFiles('temp_files/*') }}" | tr -d '\n')
+
+            # Create a new JSON object with the hash
+            modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
+            echo "$modified_app," >> combined.json
           done
           # Remove the last comma and close the array
           sed -i '$ s/,$//' combined.json
           echo "]" >> combined.json
-          cat combined.json
       - name: Upload JSON as artifact
         uses: actions/upload-artifact@v3
         with:
