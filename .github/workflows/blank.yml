@@ -41,6 +41,6 @@ jobs:
           b=${a##*/}
           echo "path=apps/$(echo $b)" >> $GITHUB_ENV
       - run: |
-          echo -e '{\n  "name": "${{ matrix.app.name }}"\n  "src": "${{ matrix.app.src }}"' > test.json
+          echo -e '{\n  "name": "${{ matrix.app.name }}",\n  "author": "${{ matrix.app.author }}",\n  "description": "${{ matrix.app.description }}",\n  "imageid": "${{ matrix.app.imageid }}",\n  "src": "${{ matrix.app.src }}",\n  "compiled": ${{ matrix.app.compiled }},\n  "hash": ${{ HashFiles(env.path) }}\n}' > test.json
           cat test.json
           echo ${{ HashFiles(env.path) }}
