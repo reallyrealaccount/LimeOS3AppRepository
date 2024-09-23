@@ -35,7 +35,10 @@ jobs:
       matrix:
         app: ${{ fromJSON(needs.read-json.outputs.json-content) }}
     steps:
-      - run: echo ${{ matrix.app.src }##*/}
+      - run: |
+          a = ${{ matrix.app.src }} 
+          b = ${a##*/}
+          echo ${b}
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
