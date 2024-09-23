@@ -35,6 +35,7 @@ jobs:
       matrix:
         app: ${{ fromJSON(needs.read-json.outputs.json-content) }}
     steps:
+      - uses: actions/checkout@v1
       - run: |
           a=${{ matrix.app.src }} 
           b=${a##*/}
