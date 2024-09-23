@@ -38,4 +38,4 @@ jobs:
       - run: |
           a=${{ matrix.app.src }} 
           b=${a##*/}
-          sha256sum apps/$b
+          c=sha256sum apps/$b
