@@ -25,4 +25,4 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: hash
-        run: echo ${{ hashFiles('apps/clicker.lua') }}
+        run: echo ${{ hashFiles('apps/*') }}
