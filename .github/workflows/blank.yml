@@ -32,7 +32,7 @@ jobs:
       - uses: seepine/hash-files@v1
         id: get-hash
         with: 
-          patterns: '/apps/*'
+          patterns: '**/*.*'
 
       - name: Echo hash
         run: echo ${{ steps.get-hash.outputs.hash }}
