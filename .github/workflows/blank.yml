@@ -39,4 +39,7 @@ jobs:
       - run: |
           a=${{ matrix.app.src }} 
           b=${a##*/}
-          c=sha256sum ${GITHUB_WORKSPACE}/apps/$b
+          echo "path=$(echo $b)" >> $GITHUB_ENV
+      - run:
+          echo ${{ HashFiles(env.path) }}
+      
