@@ -30,28 +30,14 @@ jobs:
 
       - name: Create JSON Objects
         run: |
+           # Start the combined JSON array
           echo "[" > combined.json
-          for app in $(echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]'); do
+          # Iterate over each app object
+          echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
             echo "$app," >> combined.json
           done
-          # Remove the last comma
+          # Remove the last comma and close the array
           sed -i '$ s/,$//' combined.json
           echo "]" >> combined.json
 
-      - name: Upload JSON as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: combined-json
-          path: combined.json
-
-  finalise:
-    runs-on: ubuntu-latest
-    needs: loop-json
-    steps:
-      - name: Download Outputs
-        uses: actions/download-artifact@v3
-        with:
-          name: combined-json
-
-      - run: |
-          cat combined.json
+      - run: echo combined.json
