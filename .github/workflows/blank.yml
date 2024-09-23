@@ -33,7 +33,7 @@ jobs:
         id: get-hash
         with: 
           patterns: |
-            **/apps/*
+            apps/*
 
       - name: Echo hash
         run: echo ${{ steps.get-hash.outputs.hash }}
