@@ -47,7 +47,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: loop-json
     steps:
-      - uses: actions/checkout@v1
       - run: |
           echo -e '\n]\n' >> test.json
           cat test.json
