@@ -30,7 +30,7 @@ jobs:
 
       - name: Create JSON Objects
         run: |
-           # Start the combined JSON array
+          # Start the combined JSON array
           echo "[" > combined.json
           # Iterate over each app object
           echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
