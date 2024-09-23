@@ -30,7 +30,6 @@ jobs:
 
       - name: Create JSON Objects
         run: |
-          run: |
           echo "[" > combined.json
           echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
             # Extract the src field and get the last part of the URL
