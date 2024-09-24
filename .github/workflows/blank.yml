@@ -50,5 +50,7 @@ jobs:
           # Remove the last comma and close the array
           sed -i '$ s/,$//' apps.json
           echo "]" >> apps.json
-          cat apps.json | jq . > apps.json
+          cp apps.json apps.json.tmp
+          jq . apps.json.tmp > apps.json
+          rm apps.json.tmp
       - uses: stefanzweifel/git-auto-commit-action@v5
