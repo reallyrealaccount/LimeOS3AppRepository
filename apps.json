@@ -18,15 +18,6 @@
     "hash": "1e6df2db86275c4c3f32334b0682c6ea99b78d77c00c5949a6bb0562dd811ebd"
   },
   {
-    "name": "Super AntiVirus",
-    "author": "9BitByte",
-    "description": "Really super good antivirus!",
-    "imageid": "6026568201",
-    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/Antivirus.lef",
-    "compiled": true,
-    "hash": "18b2d76cf23ef3d14c72b360086e7f86f36cb543698e2febf49599a632342299"
-  },
-  {
     "name": "Wallpaper Customiser",
     "author": "9BitByte",
     "description": "Customise your wallpaper!",
