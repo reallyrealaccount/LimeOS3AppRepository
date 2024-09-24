@@ -45,7 +45,7 @@ if fs.FileExists(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt") 
     data = decodedData
     print("Save file found, loaded player data")
 else
-    data["cookieAmount"] = 17500
+    data["cookieAmount"] = 0
     local jsonData = http.JSONEncode(data)
     fs.CreateFile(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", nil, "R-W", "System")
     fs.WriteFile(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
