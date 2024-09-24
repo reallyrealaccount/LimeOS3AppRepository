@@ -30,7 +30,8 @@ jobs:
 
       - name: Create JSON Objects
         run: |
-          echo "[" > combined.json
+          rm apps.json
+          echo "[" > apps.json
           echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
             # Extract the src field and get the last part of the URL
             src=$(echo "$app" | jq -r '.src')
@@ -41,14 +42,9 @@ jobs:
             
             # Create a new JSON object with the hash
             modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
-            echo "$modified_app," >> combined.json
+            echo "$modified_app," >> apps.json
           done
           # Remove the last comma and close the array
-          sed -i '$ s/,$//' combined.json
-          echo "]" >> combined.json
-          cat combined.json
-      - name: Upload JSON as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: combined-json
-          path: combined.json
+          sed -i '$ s/,$//' apps.json
+          echo "]" >> apps.json
+      - uses: stefanzweifel/git-auto-commit-action@v5
