@@ -2,7 +2,6 @@
 
 local fs = loadlib("FileSystem")
 local http = loadlib("Http")
--- encryption lib?
 
 local gameVersion = "1.0"
 
@@ -32,8 +31,6 @@ local data = {
     }
 }
 
-print("a")
-
 -- Loading data
 if fs.FileExists(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt") then
     -- fs.DeleteObject(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt","System") --ONLY FOR TESTING, DO NOT UNCOMMENT
@@ -51,8 +48,6 @@ else
     fs.WriteFile(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
     print("Save file not found, creating new file")
 end
-
-print("aa")
 
 -- **UI**
 local scrollFrame = Lime.CreateUI(app, "ScrollingFrame")
@@ -256,8 +251,6 @@ rebirthButton.Parent = scrollFrame
 local rebirthButtonCorner = Lime.CreateUI(app, "UICorner")
 rebirthButtonCorner.CornerRadius = UDim.new(0.1, 0)
 rebirthButtonCorner.Parent = rebirthButton
-
-print("aaa")
 
 -- **Mechanics**
 local function updateLabels()
@@ -592,5 +585,5 @@ while app:GetChildren()[1] ~= nil do
 
     local jsonData = http.JSONEncode(data)
     fs.WriteFile(fs.GetOSDriveLetter() .. ":/System/AppData/CookieClicker.txt", jsonData, "System", true)
-    -- print(fs.GetFile("fs.GetOSDriveLetter() .. :/System/AppData/CookieClicker.txt").Data)
+    -- (fs.GetFile("fs.GetOSDriveLetter() .. :/System/AppData/CookieClicker.txt").Data)
 end
