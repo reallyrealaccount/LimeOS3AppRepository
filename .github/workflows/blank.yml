@@ -27,6 +27,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+        with:
+          ref: main
+          fetch-deptch: 0
 
       - name: Create JSON Objects
         run: |
@@ -47,8 +50,4 @@ jobs:
           # Remove the last comma and close the array
           sed -i '$ s/,$//' apps.json
           echo "]" >> apps.json
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: main
-          fetch-depth: 0 # To get all tags
+      - uses: stefanzweifel/git-auto-commit-action@v5
