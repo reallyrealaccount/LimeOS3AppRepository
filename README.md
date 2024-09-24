@@ -1,4 +1,5 @@
-# BAZINGA!
-limeos 3 apps and stuff idk  
-feel free to steal any open source ones  
-please dont try to decompile my beutiful LEF files  
+# LimeOS 3 App Repository
+Repository for LimeOS 3 applications\
+Any .lua file is licenced under CC BY-NC-SA\
+Any .LEF file is propitary compiled code\
+![CC](https://licensebuttons.net/l/by-nc-sa/3.0/nl/88x31.png)
