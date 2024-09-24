@@ -37,7 +37,7 @@ jobs:
             filename=$(basename "$src") # Get the last part of the URL
             
             # Use hashFiles() to generate the hash of the temporary file
-            hash=$(sha256sum ./apps/$filename| cut -d " " -f 1)
+            hash=$(cat ./apps/$filename | sha256sum | cut -d " " -f 1)
             
             # Create a new JSON object with the hash
             modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
