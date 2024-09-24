@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v1
         with:
           ref: main
-          fetch-deptch: 0
+          fetch-depth: 0
 
       - name: Create JSON Objects
         run: |
@@ -38,7 +38,7 @@ jobs:
           echo '${{ needs.read-json.outputs.json-content }}' | jq -c '.[]' | while read -r app; do
             # Extract the src field and get the last part of the URL
             src=$(echo "$app" | jq -r '.src')
-            filename=$(basename "$src") # Get the last part of the URL 
+            filename=$(basename "$src") # Get the last part of the URL
             
             # Use hashFiles() to generate the hash of the temporary file
             hash=$(cat ./apps/$filename | sha256sum | cut -d " " -f 1)
