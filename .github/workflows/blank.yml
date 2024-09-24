@@ -47,4 +47,8 @@ jobs:
           # Remove the last comma and close the array
           sed -i '$ s/,$//' apps.json
           echo "]" >> apps.json
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: 0 # To get all tags
