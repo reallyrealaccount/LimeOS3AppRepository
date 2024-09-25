@@ -36,7 +36,8 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BlockyBird.lua",
     "compiled": false,
-    "legacy": true
+    "legacy": true,
+    "hash": "5df2c12e120d2642dc614f69197e591c8a973e2d40e7311cad2c84ecfb2d089e"
   },
   {
     "name": "DSaF",
@@ -45,6 +46,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/DSaF.lua",
     "compiled": false,
-    "legacy": true
+    "legacy": true,
+    "hash": "6a123591c45359ecf972b724e0c5d58d13ceb1da5ca320b2d1b87194eb322b87"
   }
 ]
