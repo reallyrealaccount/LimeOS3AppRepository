@@ -6,6 +6,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/clicker.lua",
     "compiled": false,
+    "legacy": false,
     "hash": "b2b85aaf73bc7fc0d7e9fc7cd657e2ff7f09ed259026a7bdfa401b8fff282ab1"
   },
   {
@@ -15,6 +16,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/PhotoLime.lef",
     "compiled": true,
+    "legacy": false,
     "hash": "1e6df2db86275c4c3f32334b0682c6ea99b78d77c00c5949a6bb0562dd811ebd"
   },
   {
@@ -24,6 +26,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/WallpaperCustomiser.lua",
     "compiled": false,
+    "legacy": false,
     "hash": "a06055535c8a946ad12bf77846bacf0e505dc70b95200718ba2e6895cf414f21"
   }
 ]
