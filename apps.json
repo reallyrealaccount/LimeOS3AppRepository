@@ -48,5 +48,14 @@
     "compiled": false,
     "legacy": true,
     "hash": "6a123591c45359ecf972b724e0c5d58d13ceb1da5ca320b2d1b87194eb322b87"
+  },
+  {
+    "name": "Cool Quiz",
+    "author": "King_DogeDev",
+    "description": "DOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!\nDOWNLOAD NOW!!!",
+    "imageid": "15476451150",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/CoolQuiz.lef",
+    "compiled": true,
+    "legacy": false
   }
 ]
