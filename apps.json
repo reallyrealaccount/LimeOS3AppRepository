@@ -58,5 +58,14 @@
     "compiled": true,
     "legacy": false,
     "hash": "d0f23c9cd475aa1e13a5dd29be1e9b0f9724b2f192908bfbdea134b909a2fc20"
+  },
+  {
+    "name": "BuildBreak",
+    "author": "9BitByte",
+    "description": "BuildBreak v0.1.0 dev\n(This game is not affiliated with Minecraft, Mojang, Microsoft of BreakBuild)",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BuildBreak.lef",
+    "compiled": true,
+    "legacy": false
   }
 ]
