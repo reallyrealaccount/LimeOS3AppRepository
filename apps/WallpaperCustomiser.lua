@@ -1,3 +1,4 @@
+-- update test
 local RegistryHandler = loadlib("RegistryHandler")
 local AccountManager = loadlib("AccountManager")
 local DesktopManager = loadlib("DesktopManager")
