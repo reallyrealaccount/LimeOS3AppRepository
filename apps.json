@@ -88,5 +88,14 @@
     "compiled": true,
     "legacy": true,
     "hash": "94fa11d42bc3b538bca2caf1fd50e01d0403ae4eb925341d1146a8074c6d3cfd"
+  },
+  {
+    "name": "Clicker Game",
+    "author": "Happygamer1983",
+    "description": "No description",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/ClickerGame.lef",
+    "compiled": true,
+    "legacy": true
   }
 ]
