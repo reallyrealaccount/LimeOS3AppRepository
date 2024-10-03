@@ -68,5 +68,27 @@
     "compiled": true,
     "legacy": false,
     "hash": "ec0fac24ee13b4c664475dfdd948b6ca7be1b48197d3485ee791f7da5487f677"
+  },
+  {
+    "name": "test",
+    "author": "9BitByte",
+    "description": "test",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/test.lua",
+    "compiled": false,
+    "legacy": false,
+    "payment": "6074502077",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "test2",
+    "author": "9BitByte",
+    "description": "test",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/test2.lef",
+    "compiled": true,
+    "legacy": false,
+    "payment": "6074502077",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 ]
