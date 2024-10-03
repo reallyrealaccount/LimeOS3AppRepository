@@ -78,5 +78,14 @@
     "compiled": true,
     "legacy": true,
     "hash": "60ec0f6c00b6f9b5378082fe719eedcb0d5a5b97abf6d9adc29681cd88a27f41"
+  },
+  {
+    "name": "Bigmancozmo Game Studio",
+    "author": "Bigmancozmo",
+    "description": "I have gone through pain to get this version to you guys (by pain I mean absolutely murdering my laptop to put the code in the SE)",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BigmancozmoGameStudio.lef",
+    "compiled": true,
+    "legacy": true
   }
 ]
