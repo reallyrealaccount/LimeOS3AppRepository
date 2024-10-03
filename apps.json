@@ -7,7 +7,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/clicker.lua",
     "compiled": false,
     "legacy": false,
-    "hash": "b2b85aaf73bc7fc0d7e9fc7cd657e2ff7f09ed259026a7bdfa401b8fff282ab1"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "PhotoLime",
@@ -17,7 +17,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/PhotoLime.lef",
     "compiled": true,
     "legacy": true,
-    "hash": "1e6df2db86275c4c3f32334b0682c6ea99b78d77c00c5949a6bb0562dd811ebd"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "Wallpaper Customiser",
@@ -27,7 +27,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/WallpaperCustomiser.lua",
     "compiled": false,
     "legacy": false,
-    "hash": "65f927faa667d6463cad0ae94115d9533f7610236a4f655aac92df6b98f14e56"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "Blocky Bird",
@@ -37,7 +37,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BlockyBird.lua",
     "compiled": false,
     "legacy": true,
-    "hash": "5df2c12e120d2642dc614f69197e591c8a973e2d40e7311cad2c84ecfb2d089e"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "DSaF",
@@ -47,7 +47,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/DSaF.lua",
     "compiled": false,
     "legacy": true,
-    "hash": "6a123591c45359ecf972b724e0c5d58d13ceb1da5ca320b2d1b87194eb322b87"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "Cool Quiz",
@@ -57,7 +57,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/CoolQuiz.lef",
     "compiled": true,
     "legacy": false,
-    "hash": "d0f23c9cd475aa1e13a5dd29be1e9b0f9724b2f192908bfbdea134b909a2fc20"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "BuildBreak",
@@ -67,7 +67,7 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BuildBreak.lef",
     "compiled": true,
     "legacy": false,
-    "hash": "ec0fac24ee13b4c664475dfdd948b6ca7be1b48197d3485ee791f7da5487f677"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "name": "BarraBrowser",
@@ -77,6 +77,6 @@
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BarraBrowser.lef",
     "compiled": true,
     "legacy": true,
-    "hash": "60ec0f6c00b6f9b5378082fe719eedcb0d5a5b97abf6d9adc29681cd88a27f41"
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 ]
