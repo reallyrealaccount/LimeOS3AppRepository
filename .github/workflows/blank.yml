@@ -39,10 +39,8 @@ jobs:
             # Extract the src field and get the last part of the URL
             src=$(echo "$app" | jq -r '.src')
             filename=$(basename "$src")
-            
-            content=$(cat ./apps/$filename)
-            fixedcontent="${content//$'\n'/}"
-            hash=$($fixedcontent | sha256sum | cut -d " " -f 1)
+
+            hash=$(cat ./apps/$filename | tr -d '\n' | sha256sum | cut -d " " -f 1)
             
             # Create a new JSON object with the hash
             modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
