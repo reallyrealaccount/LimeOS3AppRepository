@@ -79,5 +79,15 @@
     "legacy": false,
     "payment": "6074502077",
     "hash": "2a36f7b7f97b55bc25714cc9cf8241790bd7e11d0954c34a79d5f3ee4c975667"
+  },
+  {
+    "name": "test2",
+    "author": "9BitByte",
+    "description": "test",
+    "imageid": "6026568201",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/test.lua",
+    "compiled": true,
+    "legacy": false,
+    "payment": "6074502077"
   }
 ]
