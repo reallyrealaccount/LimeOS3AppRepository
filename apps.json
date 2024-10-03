@@ -98,5 +98,14 @@
     "compiled": true,
     "legacy": true,
     "hash": "ab07ae6a78d32cf9bd04a1b1f1a9417342afb25916b0ed9087ec166ee63de516"
+  },
+  {
+    "name": "Prowser",
+    "author": "Happygamer1983",
+    "description": "Say hello to the first LimeOS 2 browser! This will open many opportunities for browsers in LimeOS in the future. Stay tuned for future updates! (default website is prowser.net, still in development) Version Alpha 0.1",
+    "imageid": "11366235533",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/Prowser.lef",
+    "compiled": true,
+    "legacy": true
   }
 ]
