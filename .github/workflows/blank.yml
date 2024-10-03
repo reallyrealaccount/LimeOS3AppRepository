@@ -40,8 +40,9 @@ jobs:
             src=$(echo "$app" | jq -r '.src')
             filename=$(basename "$src")
             
-            # Use hashFiles() to generate the hash of the temporary file
-            hash=$(cat ./apps/$filename | sha256sum | cut -d " " -f 1)
+            content=$(cat ./apps/$filename)
+            fixedcontent="${content//$'\n'/}"
+            hash=$($fixedcontent | sha256sum | cut -d " " -f 1)
             
             # Create a new JSON object with the hash
             modified_app=$(echo "$app" | jq --arg hash "$hash" '. + {hash: $hash}')
