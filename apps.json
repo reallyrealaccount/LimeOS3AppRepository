@@ -13,7 +13,7 @@
     "name": "PhotoLime",
     "author": "ruben070hallo",
     "description": "No description",
-    "imageid": "6026568201",
+    "imageid": "9516547119",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/PhotoLime.lef",
     "compiled": true,
     "legacy": true,
@@ -68,5 +68,14 @@
     "compiled": true,
     "legacy": false,
     "hash": "ec0fac24ee13b4c664475dfdd948b6ca7be1b48197d3485ee791f7da5487f677"
+  },
+  {
+    "name": "BarraBrowser",
+    "author": "winterlinging",
+    "description": "BarraBrowser is a LimeOS Browser compatible with TemplateKon's and Prowser",
+    "imageid": "11326981352",
+    "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BarraBrowser.lef",
+    "compiled": true,
+    "legacy": true
   }
 ]
