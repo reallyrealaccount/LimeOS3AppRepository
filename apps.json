@@ -6,7 +6,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/clicker.lua",
     "compiled": false,
-    "legacy": false,
+    "category": "game",
     "hash": "e721666028475823bf5ab9b16d3738de2b1c133390b84178fadaf55056bf5aa5"
   },
   {
@@ -16,7 +16,7 @@
     "imageid": "9516547119",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/PhotoLime.lef",
     "compiled": true,
-    "legacy": true,
+    "category": "legacy",
     "hash": "a4ad5d62442d3aef6d1a7dbc5eb10cd60ba27647b5c76837cc0207a7d6aeb356"
   },
   {
@@ -26,7 +26,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/WallpaperCustomiser.lua",
     "compiled": false,
-    "legacy": false,
+    "category": "util",
     "hash": "7898896cfddf3952ae1aff7829870559114dd289e3efaff72da6f17ca527e9cf"
   },
   {
@@ -36,7 +36,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BlockyBird.lua",
     "compiled": false,
-    "legacy": true,
+    "category": "legacy",
     "hash": "71a9d2f90ffebec36ef42a2b13d4d070840bc983cd9eb3d39e107695ba48ee7a"
   },
   {
@@ -46,7 +46,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/DSaF.lua",
     "compiled": false,
-    "legacy": true,
+    "category": "legacy",
     "hash": "65b9eda136973d4be1a42d01f04253b7e4c4aadfd6e2eaed2571ded7f39a2eb7"
   },
   {
@@ -56,7 +56,7 @@
     "imageid": "15476451150",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/CoolQuiz.lef",
     "compiled": true,
-    "legacy": false,
+    "category": "game",
     "hash": "d0f23c9cd475aa1e13a5dd29be1e9b0f9724b2f192908bfbdea134b909a2fc20"
   },
   {
@@ -66,7 +66,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BuildBreak.lef",
     "compiled": true,
-    "legacy": false,
+    "category": "game",
     "hash": "ec0fac24ee13b4c664475dfdd948b6ca7be1b48197d3485ee791f7da5487f677"
   },
   {
@@ -76,7 +76,7 @@
     "imageid": "11326981352",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BarraBrowser.lef",
     "compiled": true,
-    "legacy": true,
+    "category": "legacy",
     "hash": "60ec0f6c00b6f9b5378082fe719eedcb0d5a5b97abf6d9adc29681cd88a27f41"
   },
   {
@@ -86,7 +86,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BigmancozmoGameStudio.lef",
     "compiled": true,
-    "legacy": true,
+    "category": "legacy",
     "hash": "94fa11d42bc3b538bca2caf1fd50e01d0403ae4eb925341d1146a8074c6d3cfd"
   },
   {
@@ -96,7 +96,7 @@
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/ClickerGame.lef",
     "compiled": true,
-    "legacy": true,
+    "category": "legacy",
     "hash": "ab07ae6a78d32cf9bd04a1b1f1a9417342afb25916b0ed9087ec166ee63de516"
   },
   {
@@ -106,7 +106,7 @@
     "imageid": "11366235533",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/Prowser.lef",
     "compiled": true,
-    "legacy": true,
+    "category": "legacy",
     "hash": "a701060dfb665d8be05f95383d3b6e2b5acbfdbc76801da67fc17a450baaab64"
   }
 ]
