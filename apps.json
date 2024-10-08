@@ -62,7 +62,7 @@
   {
     "name": "BuildBreak",
     "author": "9BitByte",
-    "description": "BuildBreak v0.1.0 dev\n(This game is not affiliated with Minecraft, Mojang, Microsoft or BreakBuild)",
+    "description": "BuildBreak v0.2.0 release\n(This game is not affiliated with Minecraft, Mojang, Microsoft or BreakBuild)",
     "imageid": "6026568201",
     "src": "https://github.com/schoolaccountidontcareabout/reallycooltempthing/raw/main/apps/BuildBreak.lef",
     "compiled": true,
